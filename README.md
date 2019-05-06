@@ -32,6 +32,7 @@ We have individually completed the the following sections of the project:
 ### Person detection and segmentation code
 Run the jupyter-notebook file **src/person segmentation/MaskRCNN.ipynb**. It takes **images/input_image1.jpeg** as input and generates the segmented output at **src/person segmentation/segmented_out.jpg**.
 ### Keypoint detection code
+Download the model from <a href="https://drive.google.com/open?id=1yEeX7NiJ3BkONWe2MIO4UUJRFHJ_s_4S">here</a> and copy it to folder **src/keypoint estimation/mpi**.  
 Navigate to **src/keypoint estimation** folder and run the following command:  
 `python3 keypoint_estimation.py`  
 This file takes the image **images/input_image1.jpeg** as input and generates the output image **src/keypoint estimation/output_keypoints.jpg** with keypoints marked. It also generates the text file **src/keypoint estimation/out_keypoints.txt** with keypoint coordinates and confidence levels, reordered for using in generation of 3D model.
