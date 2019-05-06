@@ -59,6 +59,5 @@ SMPL library was used to generate the initial 3D model. It takes the keypoint lo
 [2] Pose Estimation (keypoint detection) : https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/  
 [3] SMPL Library : Loper, Matthew, et al. ”SMPL: A skinned multi-person linear model.” ACM transactions on graphics (TOG) 34.6 (2015): 248.  
 [4] SMPL Library implementation : Bogo, Federica, et al. ”Keep it SMPL: Automatic estimation of 3D human pose and shape from a single image.” European Conference on Computer Vision. Springer, Cham, 2016.  
-[5] Object detection using tensoflow api tutorial : https://github.com/tensorflow/models/blob/master/research/object_detection/object_
-detection_tutorial.ipynb  
+[5] Object detection using tensoflow api tutorial : https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb  
 [6] Mask RCNN Model : https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/instance_segmentation.md
