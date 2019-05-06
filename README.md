@@ -54,7 +54,6 @@ Keypoint detection is done using the openpose implementation from opencv using p
 ### Generating base 3D model
 SMPL library was used to generate the initial 3D model. It takes the keypoint locations and confidence values as input. The library uses 14 out of 15 keypoints provided by the opencv openpose implementation. These keypoints were rearranged as required by the library. Sample result is given below.  
 <img src="https://github.com/shyama95/CS73-computer-vision-project/blob/master/images/input_image1.jpeg" width="250" alt="Input image"/> <img src="https://github.com/shyama95/CS73-computer-vision-project/blob/master/images/smpl_output_image1.png" width="250" alt="Initial 3D model"/>
-## Discussions
 ## References
 [1] Weng, Chung-Yi, Brian Curless, and Ira Kemelmacher-Shlizerman. ”Photo wake-up: 3d character animation from a single photo.” arXiv preprint arXiv:1812.02246 (2018).  
 [2] Pose Estimation (keypoint detection) : https://www.learnopencv.com/deep-learning-based-human-pose-estimation-using-opencv-cpp-python/  
