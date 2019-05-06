@@ -1,0 +1,1 @@
+/home/shyama/IITB/2_CV/project/smpl/SMPL_python_v.1.0.0/smpl/models/basicModel_f_lbs_10_207_0_v1.0.0.pkl
