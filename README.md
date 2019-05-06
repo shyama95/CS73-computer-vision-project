@@ -13,16 +13,35 @@ The steps involved can be briefed as follows :
 We have individually completed the the following sections of the project:
 - Person detection and Person segmentation
 - Keypoint detection (pose estimation)
-- Generation of base 3D model
+- Generation of base 3D model  
+### To do
+- Texture mapping to initial 3D model
+- Model animation
 ## Dependencies
-
+### Person detection and segmentation code
+- python v3
+- jupyter-notebook
+- python libraries : opencv, numpy, urllib, tarfile, tensorflow, zipfile, matplotlib, pillow
+### Keypoint detection code
+- python v3
+- python libraries : opencv v4.0.0 (contrib)
+### Code for generating base 3D model
+- python v2.7
+- python libraries : opencv v3.4.2, pickle, numpy, chumpy, opendr
 ## Instructions to run
 ### Person detection and segmentation code
-
+Run the jupyter-notebook file **src/person segmentation/MaskRCNN.ipynb**. It takes **images/input_image1.jpeg** as input and generates the segmented output at **src/person segmentation/segmented_out.jpg**.
 ### Keypoint detection code
-
+Navigate to **src/keypoint estimation** folder and run the following command:  
+`python3 keypoint_estimation.py`  
+This file takes the image **images/input_image1.jpeg** as input and generates the output image **src/keypoint estimation/output_keypoints.jpg** with keypoints marked. It also generates the text file **src/keypoint estimation/out_keypoints.txt** with keypoint coordinates and confidence levels, reordered for using in generation of 3D model.
 ### Code for generating base 3D model
-
+The code for generation is taken from [5].  
+Steps:  
+- Update the keypoint coordinates and confidence levels from **src/keypoint estimation/out_keypoints.txt** in the code.  
+- Navigate to **src/3d model generation** folder and run the following command:  
+`python demo.py`  
+This file takes the image **images/input_image1.jpeg** as input and generates the initial 3D model at **src/3d model generation/3d_model.png** with keypoints marked.
 ## Results
 The results obtained are given below.
 ### Person detection and segmentation
